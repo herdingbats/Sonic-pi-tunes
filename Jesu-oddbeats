@@ -1,0 +1,151 @@
+#Jesu, bleibet meine freude (JS Bach), set to random measures of 5 or 8 (2-3-3) beats.
+#by Tim McGovern    
+#  @herdingbats
+#CC-BY
+
+
+in_thread do
+  24.times do
+    sample :bd_ada, rate: 1, amp: 3
+    use_synth :noise
+    play 30, attack: 0.01, release: 0.01, amp: 1
+    sleep 0.2
+
+    if one_in(3)
+      play 30, attack: 0.01, release: 0.01, amp: 1
+      sleep 0.2
+    else
+      play 30, attack: 0.01, release: 0.01, amp: 1
+      sleep 0.2
+      play 30, attack: 0.01, release: 0.01, amp: 1
+      sleep 0.2
+    end
+  end
+end
+
+use_synth :square
+play :g3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :e4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :g4, release: 0.5
+sleep 0.2
+play :fs4, release: 0.5
+sleep 0.2
+play :g4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :e4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :fs3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :d3, release: 0.5
+sleep 0.2
+play :fs3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :e4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :g4, release: 0.5
+sleep 0.2
+play :fs4, release: 0.5
+sleep 0.2
+play :g4, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :e3, release: 0.5
+sleep 0.2
+play :d4, release: 0.5
+sleep 0.2
+play :c4, release: 0.5
+sleep 0.2
+play :b3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :g3, release: 0.5
+sleep 0.2
+play :d3, release: 0.5
+sleep 0.2
+play :a3, release: 0.5
+sleep 0.2
+play :fs3, release: 0.5
+sleep 0.2
+play :g3, release: 1.2
