@@ -1,0 +1,359 @@
+#Jesu Jesu bleibet meine meine freude 
+#this variable is the synth that's playing the tune
+mainsynth = :fm
+
+#this variable tunes the number of times that the first two notes of the triplet repeat
+repnum = [1,2,3]
+
+
+define :smallbeat do
+  use_synth :noise
+  play 30, attack: 0.01, release: 0.01, amp: 1
+  use_synth mainsynth
+#need to change the synth back to the dominant sound
+end
+
+define :bigbeat do
+  sample :bd_ada, rate: 1, amp: 3
+end
+
+
+
+
+
+use_synth mainsynth
+#pick-up beats 2 and 3
+bigbeat
+play 55, release: 0.5
+smallbeat
+sleep 0.2
+play 57, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 60, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 60, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 64, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 62, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 67, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 66, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 67, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 59, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 55, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 57, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 59, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 60, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 64, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 60, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 59, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 57, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 55, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 54, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 55, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 57, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 50, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 54, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 57, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 60, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 57, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 55, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 57, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 60, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 60, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 64, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 62, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 67, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 66, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 67, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 59, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 55, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 57, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 59, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 64, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 62, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 60, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 59, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 57, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 55, release: 0.5
+smallbeat
+sleep 0.2
+
+#start of triplet
+(choose(repnum)).times do
+	bigbeat
+	play 50, release: 0.5
+	smallbeat
+	sleep 0.2
+	play 57, release: 0.5
+	smallbeat
+	sleep 0.2
+end
+
+#thirdbeat
+play 54, release: 0.5
+smallbeat
+sleep 0.2
+
+#last note
+bigbeat
+play 55, release: 1.2
+
+
+
